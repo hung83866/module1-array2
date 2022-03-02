@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra xem v có thuộc mảng ko</title>
+</head>
+<body>
+<script>
+    let songuyen = [];
+    for (let i = 0;i<5;i++){
+        songuyen[i]=+prompt('nhập số tùy ý');
+    }
+    console.log(songuyen)
+    let V = prompt('nhập số V cần kiểm tra');
+    for (j=0;j<songuyen.length;j++){
+        if (V == songuyen[j]){
+            document.write("V is in the array")
+            break;
+        }
+    }
+</script>
+</body>
+</html>

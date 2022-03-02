@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị lớn nhất và trung bình cộng các số</title>
+</head>
+<body>
+<script>
+    let songuyen=[];
+    let max=0;
+    let s = 0;
+    let trungbinh =0;
+    for (let i=0;i<10;i++) {
+        songuyen[i] = +prompt('nhập số nguyên bất kì');
+        s+=songuyen[i];
+        trungbinh=s/10
+        if (max<songuyen[i]){
+            max=songuyen[i];
+        }
+    }
+    document.write(' Max = '+max+'<br>');
+    document.write(' trung bình cộng = '+trungbinh);
+</script>
+</body>
+</html>
