@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thay thế kí tự trong mảng</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhập ký tự');
+    let b = [];
+    let c = '-';
+    let d = '_'
+    let arr = a.toString();
+    for (let i = 0; i < arr.length ; i++){
+        if (arr[i]==c){
+            b.push(d)
+        }else b.push(arr[i])
+    }
+    document.write(b.join(''))
+</script>
+</body>
+</html>

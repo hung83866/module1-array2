@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra giống và khác của 2 chuỗi</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhập chuỗi 1');
+    let b = prompt('nhập chuỗi 2');
+    let array1 = a.toString();
+    let array2 = b.toString();
+    let j = 0;
+    let check = true;
+   for (let i = 0 ; j < array1.length ; i++){
+       if (array1[i]!=array2[i]) {
+           document.write('2 chuỗi khác nhau');
+           check=false;
+           break;
+       }
+       if (check){
+           j++;
+       }
+       document.write('2 chuỗi giống nhau')
+   }
+
+
+</script>
+</body>
+</html>

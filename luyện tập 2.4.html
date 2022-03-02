@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số từ trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let c = prompt('nhập kí tự tùy ý');
+    let day = c.toString();
+    let a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    arr=a.toString();
+    let count = 0;
+    for (let i = 0 ; i<day.length ; i++){
+        for (let j = 0 ; j < arr.length ; j++)
+            if (arr[j]===day[i]){
+                count++
+            }
+    }document.write('số từ = ' + count)
+</script>
+</body>
+</html>
